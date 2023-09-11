@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 10;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; 
+    margin: 0;
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: var(--color-first);
+    position: relative;
+  }
+  .nav-item a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0; /* Ajustez ceci si nécessaire */
+    height: 2px;
+    width: 0; /* Commencez avec une largeur nulle */
+    background-color: black;
+    border-radius: 50px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-item a:hover::before {
+    width: 100%; /* Augmentez la largeur au survol */
+  }

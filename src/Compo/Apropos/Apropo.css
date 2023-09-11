@@ -1,0 +1,41 @@
+.info_apropos{
+    grid-template-columns: 60% 40%;
+    text-align: justify;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+h5{
+    font-size: 2.25rem;
+}
+.info_apropos img{
+    width: 340px;
+}
+.skillscontainer{
+    background-color: var(--color-first);
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.brands {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap: 5px;
+}
+.brands i{
+    font-size: 40px; 
+    transition: .2s;
+}
+.brands i:hover{
+    color: var(--color-second);
+}
+.brands img{
+    width: 45px; 
+    transition: .2s;
+}
+.brands img:hover{
+    color: var(--color-second);
+    filter: invert(44%) sepia(84%) saturate(7298%) hue-rotate(340deg) brightness(103%) contrast(90%);
+}

@@ -1,0 +1,88 @@
+.home{
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ellipse-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ellipse {
+    position: absolute;
+    color: var(--color-first); 
+    width: 700px;
+     
+}
+.e1{
+    rotate: 10deg;
+}
+.e2{
+    rotate: 25deg;
+    
+}
+.e3{ 
+    rotate: -22deg;
+}
+
+
+
+
+
+.scroll_down{
+    position: absolute;
+    bottom: 1rem;
+    left: auto;
+    width: 100%;
+}
+.home_scoll_name{
+    font-size: small;
+    color: var(--color-first);
+}
+.mouse{
+    border: 2px solid var(--color-first);
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: 0.75rem auto auto auto;
+    border-radius: 1rem;
+    position: relative;
+    
+}
+@keyframes animouse {
+    0%{top: 29%;}
+    15%{top: 50%;}
+    50%{top: 50%;}
+    100%{top: 29%;}
+}
+
+.wheel{
+    background-color: var(--color-first);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animouse 2s linear infinite;
+    
+}
+
+.soslink i{
+    font-size: 30px;
+    margin: 5px;
+    transition: .2s ease;
+}
+.soslink i:hover{
+   color: var(--color-first);
+}

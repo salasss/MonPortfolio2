@@ -1,0 +1,91 @@
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    gap: 0.875rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+
+}
+img{
+    width: 300px;
+}
+.project{ 
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
+}
+
+.workmask{
+    background-color: var(--color-first);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    opacity: 0;
+
+}
+.project:hover .workmask{
+    opacity: .9;
+}
+
+.project:hover .workmask{
+    opacity: .9;
+}
+
+.worktitle{
+    color: black;
+    position: absolute;
+    font-size: 24px;
+    margin: 0 0 0.98rem;
+    padding: 0 1.25rem;
+    top: 1rem;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: .3s;
+}
+.worktag{
+    color: black;
+    text-align: justify;
+    position: absolute;
+    font-size: 1rem;
+    margin: 0 0 0.98rem;
+    padding: 0 1.25rem;
+    height: 10px;
+    top: 2.5rem;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: .3s;
+}
+.workbutton{
+    position: absolute;
+    font-size: 2.5rem;
+    left: 1rem;
+    bottom: 1rem;
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: .3s;
+    opacity: 0;
+
+}
+.project:hover .workbutton{
+    opacity: 1;
+    }
+
+    .project:hover .worktitle,.project:hover .worktag,.project:hover .workcategory{
+    opacity: 1;
+    transform: translateY(0);
+}
